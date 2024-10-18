@@ -21,7 +21,7 @@ exports.create = (req, res) => {
     if (err)
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Tutorial."
+          err.message || "Some error occurred with the server while creating the Tutorial."
       });
     else res.send(data);
   });
